@@ -1,29 +1,31 @@
 // Business logic
-var beepException = [1];
-var boopException = [2];
-var userNameException = [3];
-
-
+// var beepException = [1];
+// var boopException = [2];
+// var userNameException = [3];
+//
+//
 function count(userNumber) {
+  var userNumber = parseInt($("input#userNumber").val());
+  var userName = $("input#userName").val();
   var result = [];
   for (var i = 0; i <= userNumber; i++) {
     if (i.toString().includes("32")) {
-      result.push(i + " I'm sorry Dave. I'm afraid I can't do that");
+      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
     }
     else if (i.toString().includes ("21")) {
-      result.push(i + " Boop!");
+      result.push(" Boop!");
     }
     else if (i.toString().includes("13")) {
-      result.push(i + " I'm sorry Dave. I'm afraid I can't do that")
+      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
     }
-    if (i.toString().includes("3")) {
-      result.push(i + " I'm sorry Dave. I'm afraid I can't do that");
+    else if (i.toString().includes("3")) {
+      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
     }
     else if (i.toString().includes ("2")) {
-      result.push(i + " Boop!");
+      result.push(" Boop!");
     }
     else if (i.toString().includes("1")) {
-      result.push(i + " Beep!")
+      result.push(" Beep!");
     }
     else result.push(" " + i);
   }
@@ -34,7 +36,6 @@ function count(userNumber) {
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     event.preventDefault();
-    var userNumber = parseInt($("input#userNumber").val());
     var output = count(userNumber);
     $("#output").text(output);
   });
