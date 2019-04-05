@@ -19,20 +19,26 @@
       <ul>
         <li>Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"</li>
         <li>Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"</li>
-        <li>Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."</li>
+        <li>Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave (or user's name) I'm afraid I can't do that."</li>
       </ul>
     </div>
 <!-- This section is the form where the user enters a number -->
-    <div class="intro">
-      <h1>Oh hello there!</h1>
-      <form id="userInput">
-        <label for="userInput">Please enter your name:</label>
-        <input id="userName" type="text" class="form-control">
-        <label for="userInput">Please enter a number:</label>
-        <input id="userNumber" type="text" class="form-control">
-        <button type="submit" class="btn btn-info">Submit</button>
-      </form>
-    </div>
+    <form id="userInput">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="about" src="img/hal.jpg" alt="a photo of hal">
+        </div>
+        <div class="col-md-8">
+          <h1>Oh hello there!</h1>
+          <label for="userInput">Please enter your name:</label>
+          <input id="userName" type="text" class="form-control">
+          <label for="userInput">Please enter a number:</label>
+          <input id="userNumber" type="number" class="form-control">
+          <br>
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </div>  
+    </form>
 <!-- This section is the output of the program -->
     <div id="output">
     </div>
