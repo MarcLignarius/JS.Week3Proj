@@ -3,9 +3,9 @@ function count(userNumber) {
   var result = [];
   for (var i = 0; i <= userNumber; i++) {
     if (i.toString().includes("3")) {
-        result.push(["I'm sorry Dave. I'm afraid I can't do that!"]);
+        result.push("I'm sorry Dave. I'm afraid I can't do that.");
     }
-    else result += i;
+    else result.push(" " + i);
   }
   return result;
 };
