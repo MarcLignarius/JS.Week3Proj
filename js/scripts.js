@@ -1,24 +1,29 @@
 // Business logic
-
-var exception1 = [1];
-var exception2 = [2];
-var exception3 = [3];
-
 function count(userNumber) {
-  var result = "";
+  var result = [""];
   for (var i = 0; i <= userNumber; i++) {
-    result += i;
+    if (i.toString().includes("3")) {
+        alert("there's a 3");
+    }
+    else if (i.toString().includes("2")) {
+        alert("there's a 2");
+    }
+    else if (i.toString().includes("1")) {
+        alert("there's a 1");
+    }
+    else {
+      result += i;
+    }
   }
   return result;
 };
+
 // User Interface Logic
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     event.preventDefault();
     var userNumber = parseInt($("input#userNumber").val());
-    console.log("userNumber", userNumber);
-    var output = count(userNumber).split("");
-    console.log("output", output);
+    var output = count(userNumber);
     $("#output").text(output);
   });
 });
