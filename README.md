@@ -18,11 +18,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| The program returns a range of numbers from 0 to the users inputted number | 5 | 0, 1, 2, 3, 4, 5 |
+| The program changes all numbers that contain a 3 to "I'm sorry, Dave. I'm afraid I can't do that." | 32 | "I'm sorry, Dave. I'm afraid I can't do that." |
+| The program changes all numbers that contain a 2 (but not a 3) to "Boop!" | 21 | "Boop!" |
+| The program changes all numbers that contain a 1 (but not a 3 or a 2) to "Beep!" | 15 | "Beep!"" |
 
 ## Known Bugs
 
