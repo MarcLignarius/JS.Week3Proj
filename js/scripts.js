@@ -1,19 +1,11 @@
 // Business logic
 function count(userNumber) {
-  var result = [""];
+  var result = [];
   for (var i = 0; i <= userNumber; i++) {
     if (i.toString().includes("3")) {
-        alert("there's a 3");
+        result.push(["I'm sorry Dave. I'm afraid I can't do that!"]);
     }
-    else if (i.toString().includes("2")) {
-        alert("there's a 2");
-    }
-    else if (i.toString().includes("1")) {
-        alert("there's a 1");
-    }
-    else {
-      result += i;
-    }
+    else result += i;
   }
   return result;
 };
@@ -25,5 +17,6 @@ $(document).ready(function() {
     var userNumber = parseInt($("input#userNumber").val());
     var output = count(userNumber);
     $("#output").text(output);
+
   });
 });
