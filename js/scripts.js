@@ -6,7 +6,7 @@ function count(userNumber) {
   var result = [];
   for (var i = 0; i <= userNumber; i++) {
     if (i.toString().includes("3")) {
-      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
+      result.push(" I'm sorry " + (userName || "Dave") + ", I'm afraid I can't do that");
     }
     else if (i.toString().includes ("2")) {
       result.push(" Boop!");
