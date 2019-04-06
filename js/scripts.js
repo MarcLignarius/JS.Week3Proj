@@ -5,16 +5,7 @@ function count(userNumber) {
   var userName = $("input#userName").val();
   var result = [];
   for (var i = 0; i <= userNumber; i++) {
-    if (i.toString().includes("32")) {
-      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
-    }
-    else if (i.toString().includes ("21")) {
-      result.push(" Boop!");
-    }
-    else if (i.toString().includes("13")) {
-      result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
-    }
-    else if (i.toString().includes("3")) {
+    if (i.toString().includes("3")) {
       result.push(" I'm sorry " + userName + ", I'm afraid I can't do that");
     }
     else if (i.toString().includes ("2")) {
