@@ -1,5 +1,12 @@
-#result {
+#initiallyHidden {
   display: none;
+  border: 2px solid black;
+  background-color: #6c757d;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom:20px;
 }
 
 form {

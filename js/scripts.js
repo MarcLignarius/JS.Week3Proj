@@ -1,9 +1,5 @@
 // Business logic
-// var beepException = [1];
-// var boopException = [2];
-// var userNameException = [3];
-//
-//
+
 function count(userNumber) {
   var userNumber = parseInt($("input#userNumber").val());
   var userName = $("input#userName").val();
@@ -33,10 +29,13 @@ function count(userNumber) {
 };
 
 // User Interface Logic
+
 $(document).ready(function() {
-  $("form#userInput").submit(function(event) {
+  $("#userInput").submit(function(event) {
     event.preventDefault();
     var output = count(userNumber);
     $("#output").text(output);
+    $("#initiallyHidden").show();
+    $("#initiallyShowing").hide();
   });
 });
