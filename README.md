@@ -20,9 +20,9 @@ _Program takes a number and name input from user and returns a count. Numbers co
 | ------------- |:-------------:| -----:|
 | The program returns a range of numbers from 0 to the users inputted number | 5 | 0, 1, 2, 3, 4, 5 |
 | The program changes all numbers that contain a 3 to "I'm sorry, Dave. I'm afraid I can't do that." | 32 | "I'm sorry, Dave I'm afraid I can't do that." |
-| The program changes all numbers that contain a 3 to "I'm sorry, userName. I'm afraid I can't do that." based on user's input | Marc 32 | "I'm sorry, Marc I'm afraid I can't do that." |
 | The program changes all numbers that contain a 2 (but not a 3) to "Boop!" | 21 | "Boop!" |
 | The program changes all numbers that contain a 1 (but not a 3 or a 2) to "Beep!" | 15 | "Beep!" |
+| The program replaces "Dave" with the user's name input if they fill in the name field | Marc 32 | "I'm sorry, Marc I'm afraid I can't do that." |
 
 ## Known Bugs
 
