@@ -1,8 +1,8 @@
 // Business logic
 
 function count(userNumber) {
-  var userNumber = parseInt($("input#userNumber").val());
   var userName = $("input#userName").val();
+  var userNumber = parseInt($("input#userNumber").val());
   var result = [];
   for (var i = 0; i <= userNumber; i++) {
     if (i.toString().includes("3")) {
